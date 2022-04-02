@@ -29,7 +29,7 @@ jQuery(function ($){
     const countdownBox = document.querySelector('.countdown');
     const dateItems = document.querySelectorAll('.box .num');
 
-    let futureDate = new Date(2022,3,02,00,00);
+    let futureDate = new Date(2022,04,01,00,00,00);
 
     const year = futureDate.getFullYear();
     const hours = futureDate.getHours();
