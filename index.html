@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    
     
 </head>
 <body>
@@ -54,12 +56,37 @@
         </div>
         
         <form action="#" class="subscribe-form">
-            <div class="field-wrp">
+            <div class="field-wrp"> 
                 <input type="email" placeholder="Email" required>
-                <button type="submit">Susbscribe</button>
+                <button id="myBtn" type="submit">Susbscribe</button>
+                <!-- <form action="https://mailthis.to/you@mail.com" method="POST">
+                    <input type="text" name="name" placeholder="Your name">
+                    <input type="email" name="_replyto" placeholder="Your email">
+                    <input type="submit" value="Send Email">
+                </form> -->
             </div>
         </form>
-        
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Modal Header</h2>
+              </div>
+              <div class="modal-body">
+                
+                <p>Some other text...</p>
+              </div>
+              <!-- <div class="modal-footer">
+                <h3>Modal Footer</h3>
+              </div> -->
+            </div>
+          
+          </div>
+          
+
+
         <div class="social-shares">
             <a href="#"><i class="fa fa-facebook"></i></a>
             <a href="#"><i class="fa fa-twitter"></i></a>
@@ -79,5 +106,7 @@
 	
     <!--custom js-->
     <script src="./js/scripts.js"></script>
+    <script src="./js/modal.js"></script>
+
 </body>
 </html>
