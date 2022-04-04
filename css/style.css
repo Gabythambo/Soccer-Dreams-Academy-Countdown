@@ -1,10 +1,14 @@
 
-.imgResponsive {
+@font-face {
+    font-family: 'TitilliumWeb-Regular';
+    src: url('../css/TitilliumWeb-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
 
+.imgResponsive {
     width: 375px;
     justify-content: center;
-
-
 }
 
 .coming-soon-page{
@@ -19,7 +23,7 @@
     padding: 0 10%;
     overflow: hidden;
     background: transparent;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'TitilliumWeb-Regular','Poppins', sans-serif;
 }
 
 .coming-soon-page .content-wrp{
@@ -33,22 +37,6 @@
     justify-content: center;
 }
 
-/* .coming-soon-page .content-wrp .brand-name{
-    position: relative;
-    flex: 0 0 10%;
-    max-width: 10%;
-    padding: 5px 20px;
-    font-size: 26px;
-    line-height: 1.5;
-    text-transform: uppercase;
-    margin: 0 auto 50px;
-    color: #fff;
-    border: 2px solid transparent;
-   min-width: 250px;
-
-    
-} */
-
 .coming-soon-page .content-wrp .brand-name::before{
     content: '';
     position: absolute;
@@ -58,8 +46,6 @@
     bottom: -20px;
     z-index: -1;
     transform: skew(2deg,2deg);
-    /* background: #37ffb5; */
-    
 }
 
 .coming-soon-page .content-wrp .brand-name span{
@@ -142,7 +128,7 @@
     flex: 0 0 100%;
 }
 
-.coming-soon-page .content-wrp .subscribe-form input[type="email"]{
+.coming-soon-page .content-wrp .subscribe-form input{
     padding: 15px;
     width:25%;
     border-radius: 4px;
@@ -227,18 +213,6 @@
 
 /*Responsive*/
 
-/* @media only screen and (max-width: 850px){
-    .coming-soon-page {
-        flex-direction: column;
-    }
-    .coming-soon-page .content-wrp .brand-name{
-        flex: 0 0 30%;
-        max-width: 30%;
-    }
-    .coming-soon-page .content-wrp .subscribe-form input[type="email"]{
-        width: 50%;
-    }
-} */
 
 @media only screen and (max-width: 625px){
     .coming-soon-page .content-wrp .brand-name{
@@ -248,17 +222,16 @@
 }
 
 @media only screen and (max-width: 350px){
-    .coming-soon-page .content-wrp .subscribe-form input[type="email"]{
+    .coming-soon-page .content-wrp .subscribe-form input{
         width: 85%;
         margin-bottom: 10px;
     }
     
-    .coming-soon-page .content-wrp .subscribe-form button[type="submit"]{
+    .coming-soon-page .content-wrp .subscribe-form button{
         width: 50%;
     }
+    .coming-soon-page .content-wrp .subscribe-form input{
+        width: 85%;
+        margin-bottom: 10px;}
+
 }
-
-
-
-
-

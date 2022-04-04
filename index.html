@@ -54,33 +54,25 @@
              
          </div>
         </div>
-        
-        <form action="#" class="subscribe-form">
-            <div class="field-wrp"> 
-                <input type="email" placeholder="Email">
-                <button id="myBtn" type="submit">Susbscribe</button>
-                <!-- <form action="https://mailthis.to/you@mail.com" method="POST">
+        <form id="form" action="https://submit-form.com/IevpJWHs"  class="subscribe-form" >
+            <!-- IevpJWHs -->
+            <div class="field-wrp">
                     <input type="text" name="name" placeholder="Your name">
-                    <input type="email" name="_replyto" placeholder="Your email">
-                    <input type="submit" value="Send Email">
-                </form> -->
-            </div>
-        </form>
+                    <input type="email" name="email" placeholder="Your email">
+                    <button id="myBtn" type="submit">Subscribe</button>  
+                  </div>
+        </form> 
         <div id="myModal" class="modal">
 
             <!-- Modal content -->
             <div class="modal-content">
               <div class="modal-header">
                 <span class="close">&times;</span>
-                <h2>Muchas Gracias!</h2>
+                <h2>Thanks a lot!</h2>
               </div>
               <div class="modal-body">
-                
-                <p>Sus datos fueron cargados correctamente</p>
+                <p>We will contact you as soon as possible.</p>
               </div>
-              <!-- <div class="modal-footer">
-                <h3>Modal Footer</h3>
-              </div> -->
             </div>
           
           </div>
@@ -107,6 +99,18 @@
     <!--custom js-->
     <script src="./js/scripts.js"></script>
     <script src="./js/modal.js"></script>
+<!--     
+<script>
+    document.addEventListener('DOMContentLoaded', function(){
+      let formulario = document.getElementById('form');
+      formulario.addEventListener('submit', function() {
+        setTimeout(()=>{
+        formulario.reset();
+        },
+        2000);  
+    });
+    });
+  </script> -->
 
 </body>
 </html>

@@ -76,14 +76,9 @@ jQuery(function ($){
         if(t < 0){
             clearInterval(countdown);
         }
-        
-                
+                   
     }
-    
-    
-    
-    
-    
+
     let countdown = setInterval(timeRemaining, 1000)
     timeRemaining()
 });
